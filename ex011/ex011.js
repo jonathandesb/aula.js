@@ -1,11 +1,11 @@
 //Peça ao usuario para digitar 1 numero
 // exiba 4 botões na tela com soma, subtração, vezes, divisão 
-var numero = prompt('Digite um número')
+var numero = prompt('Digite um número') // Pedir par ao usuario digitar 1 numero
 numero = parseFloat(numero)
-escreve()
+escreve() // função escrever 
 
 function escreve () {
-   var output = document.querySelector("#output");
+   var output = document.querySelector("#output"); // selecionar o id de saida
    output.innerHTML = numero
 }
 
@@ -40,30 +40,3 @@ function divisao(){ // função
 
 
 
-
-
-
-
-
-/*
-   limparTabuada() // chamar função "Limpar tabuada"
-
-   numero = parseFloat(numero) // converter o número em float
-   var indice = 1
-   while( indice <= 1000) { // enquanto indice for menor ou igual a 1000
-    mensagem += numero + " x " + indice + " = " + ( numero * indice) + "<br>"; // numero X indice = ( numero * indice) <quebra a linha>
-    indice++ // indice = indice + 1
-      }
-
-   output.innerHTML = mensagem; // div com id "output" vai receber a variavel mensagem 
-   
-   
-
-   function limparTabuada () { // função limpartabauda, ao ser clicada ela limpa a tabuada
-      mensagem = ""; // mensagem vazia
-      output.innerHTML = mensagem; // div com id *output* recebe a variavel vazia
-   }
-
-   var output = document.querySelector("#output");
-   var mensagem = "";
- */
